@@ -211,6 +211,28 @@ nav a:hover, nav a.active { color: var(--text); }
 }
 .back-link:hover { color: var(--text); }
 
+/* ===== Highlight Box ===== */
+.highlight {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  padding: 18px 22px;
+  margin: 24px 0;
+  border-radius: 0 8px 8px 0;
+}
+.highlight strong { color: var(--accent-light); }
+
+/* ===== Article Lead ===== */
+.article-body .lead {
+  font-size: 1.15em;
+  color: var(--text);
+  font-weight: 500;
+  margin-bottom: 24px;
+  line-height: 1.7;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
 /* ===== Weekly ===== */
 .weekly-list { display: flex; flex-direction: column; gap: 16px; }
 .weekly-item {
