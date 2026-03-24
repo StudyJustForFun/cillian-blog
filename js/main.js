@@ -3,6 +3,15 @@
 
 const POSTS = [
   {
+    id: "2026-03-24-xiaohongshu-cover",
+    date: "2026-03-24",
+    title: "小红书封面设计：3 秒决定用户会不会点进来",
+    excerpt: "封面比标题重要3倍。3秒之内抓不住注意力，用户就划过去了。高对比度+大字标题+人物场景+统一风格。工具：Canva、稿定设计、醒图。",
+    tags: ["小红书", "运营"],
+    category: "小红书",
+    file: "posts/2026-03-24-xiaohongshu-cover.html"
+  },
+  {
     id: "2026-03-24-xiaohongshu-titles",
     date: "2026-03-24",
     title: "小红书爆款标题公式：5 个模板直接套用",
