@@ -3,6 +3,16 @@
 
 const POSTS = [
   {
+    id: "2026-03-24-xiaohongshu-titles",
+    date: "2026-03-24",
+    title: "小红书爆款标题公式：5 个模板直接套用",
+    excerpt: "封面和标题决定点击，内容决定转发。5个万能公式：数字+悬念、身份+痛点+方案、对比反差、情绪共鸣、实用清单体。好的标题不是让你看懂，而是让你想点。",
+    tags: ["小红书", "运营"],
+    category: "小红书",
+    file: "posts/2026-03-24-xiaohongshu-titles.html"
+  },
+  {
+  {
     id: "2026-03-23-social-nature",
     date: "2026-03-23",
     title: "社交的本质：我们为什么需要彼此，又为什么害怕彼此",
