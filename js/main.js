@@ -21,6 +21,15 @@ const POSTS = [
     file: "posts/2026-03-24-etf-guide.html"
   },
   {
+    id: "2026-03-24-perfectionism-self-acceptance",
+    date: "2026-03-24",
+    title: "完美主义的陷阱：如何在追求卓越与自我接纳之间找到平衡",
+    excerpt: "完美主义看似积极，实则是焦虑和自我否定的根源。健康的完美主义 vs 病态的完美主义。如何打破循环：认识成本、重新定义「足够好」、练习自我同情、拥抱失败。",
+    tags: ["心理", "自我接纳", "成长"],
+    category: "心理",
+    file: "posts/2026-03-24-perfectionism-self-acceptance.html"
+  },
+  {
     id: "2026-03-24-impostor-syndrome",
     date: "2026-03-24",
     title: "冒名顶替综合征：你其实比你自己以为的更厉害",
