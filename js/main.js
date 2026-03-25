@@ -3,6 +3,15 @@
 
 const POSTS = [
   {
+    id: "2026-03-25-emotional-regulation",
+    date: "2026-03-25",
+    title: "情绪调节的艺术：如何在压力下保持内心的平静",
+    excerpt: "情绪调节是情商的核心能力。STOP技术、6秒法则、认知重评、情绪日记等实用方法，帮助你在压力下保持平静。命名情绪是驯服情绪的第一步。",
+    tags: ["心理", "情商", "压力管理"],
+    category: "心理",
+    file: "posts/2026-03-25-emotional-regulation.html"
+  },
+  {
     id: "2026-03-25-ai-productivity",
     date: "2026-03-25",
     title: "AI 时代的生产力焦虑：你真的需要那么多工具吗？",
