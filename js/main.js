@@ -3,6 +3,15 @@
 
 const POSTS = [
   {
+    id: "2026-03-25-communication-skills",
+    date: "2026-03-25",
+    title: "非暴力沟通：如何说出心里话，又不伤人",
+    excerpt: "非暴力沟通四步法：观察（不评判）、感受（不想法）、需要（不指责）、请求（不命令）。区分观察和评判、感受和想法、请求和命令是关键。",
+    tags: ["心理", "沟通", "关系"],
+    category: "心理",
+    file: "posts/2026-03-25-communication-skills.html"
+  },
+  {
     id: "2026-03-25-compound-interest-truth",
     date: "2026-03-25",
     title: "复利的真相：为什么大多数人永远等不到复利爆发",
