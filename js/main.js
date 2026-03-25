@@ -3,6 +3,15 @@
 
 const POSTS = [
   {
+    id: "2026-03-25-growth-leverage",
+    date: "2026-03-25",
+    title: "为什么你努力了三年，不如别人努力三个月",
+    excerpt: "成长的真相是：方向对了，三个月顶三年。方向错了，三年只是在原地踏步。三个成长杠杆：核心技能、反馈系统、非线性成长。",
+    tags: ["成长", "效率", "自我提升", "方法论"],
+    category: "成长",
+    file: "posts/2026-03-25-growth-leverage.html"
+  },
+  {
     id: "2026-03-25-communication-skills",
     date: "2026-03-25",
     title: "非暴力沟通：如何说出心里话，又不伤人",
