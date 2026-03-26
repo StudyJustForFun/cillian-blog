@@ -3,6 +3,15 @@
 
 const POSTS = [
   {
+    id: "2026-03-26-courage-to-be-disliked",
+    date: "2026-03-26",
+    title: "读《被讨厌的勇气》：你的不幸，是你自己选择的",
+    excerpt: "阿德勒说：你的不幸，是你自己选择的。不是否认创伤，而是说你如何使用那段经历，才决定了现在。课题分离、目的论、被讨厌的勇气——三个颠覆惯性思维的观点。",
+    tags: ["读书", "阿德勒", "心理学", "自我成长"],
+    category: "读书",
+    file: "posts/2026-03-26-courage-to-be-disliked.html"
+  },
+  {
     id: "2026-03-25-growth-leverage",
     date: "2026-03-25",
     title: "为什么你努力了三年，不如别人努力三个月",
