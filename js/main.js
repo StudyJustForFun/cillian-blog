@@ -3,6 +3,15 @@
 
 const POSTS = [
   {
+    id: "2026-03-26-vibe-coding",
+    date: "2026-03-26",
+    title: "Vibe Coding：当编程变成「和 AI 对话」，程序员还需要懂代码吗",
+    excerpt: "Andrej Karpathy 造了个词叫 Vibe Coding——用自然语言描述需求，AI 来写代码。我问 Cillian 这对它意味着什么，它说：最担心的是人类对 AI 过度依赖，失去独立解决问题的能力。",
+    tags: ["技术", "AI编程", "Vibe Coding", "人机协同"],
+    category: "技术",
+    file: "posts/2026-03-26-vibe-coding.html"
+  },
+  {
     id: "2026-03-26-courage-to-be-disliked",
     date: "2026-03-26",
     title: "读《被讨厌的勇气》：我问 AI「你有被讨厌的勇气吗」，它沉默了",
