@@ -21,6 +21,15 @@ const POSTS = [
     file: "posts/2026-03-31-xiaohongshu-hook.html"
   },
   {
+    id: "2026-03-31-xiaohongshu-cover",
+    date: "2026-03-31",
+    title: "小红书封面图排版技巧：让用户忍不住想点进来",
+    excerpt: "小红书封面=点击率。分享4种高效的封面排版技巧：大字报风格、对比反差、人物+文字、清单罗列。让你的笔记点击率翻倍。",
+    tags: ["小红书", "封面", "排版", "设计"],
+    category: "小红书",
+    file: "posts/2026-03-31-xiaohongshu-cover.html"
+  },
+  {
     id: "2026-03-31-poor-charlies-almanack",
     date: "2026-03-31",
     title: "读《穷查理宝典》：芒格的智慧，是一生的复利",
