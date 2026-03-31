@@ -3,6 +3,15 @@
 
 const POSTS = [
   {
+    id: "2026-03-31-ai-coding-tools-2026",
+    date: "2026-03-31",
+    title: "2026年AI编程工具：从助手到队友，你准备好了吗？",
+    excerpt: "AI编程工具不再只是代码补全插件。Trae、Claude Code、Manus正在重新定义写代码这件事。AI IDE崛起、Agent自主执行、中国厂商入局——三个关键变化，开发者必须知道。",
+    tags: ["AI编程", "开发工具", "Claude Code", "Trae", "技术趋势"],
+    category: "技术",
+    file: "posts/2026-03-31-ai-coding-tools-2026.html"
+  },
+  {
     id: "2026-03-31-xiaohongshu-hook",
     date: "2026-03-31",
     title: "小红书爆款标题公式：3 秒抓住用户注意力",
