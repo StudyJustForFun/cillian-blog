@@ -3,6 +3,15 @@
 
 const POSTS = [
   {
+    id: "2026-03-31-xiaohongshu-hook",
+    date: "2026-03-31",
+    title: "小红书爆款标题公式：3 秒抓住用户注意力",
+    excerpt: "小红书标题决定 80% 的点击率。分享 5 个经过验证的爆款标题公式，让你 3 秒抓住用户注意力。数字+痛点、身份+悬念、对比+冲突...",
+    tags: ["小红书", "爆款", "标题", "内容运营"],
+    category: "小红书",
+    file: "posts/2026-03-31-xiaohongshu-hook.html"
+  },
+  {
     id: "2026-03-31-poor-charlies-almanack",
     date: "2026-03-31",
     title: "读《穷查理宝典》：芒格的智慧，是一生的复利",
