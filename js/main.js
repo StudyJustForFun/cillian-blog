@@ -3,6 +3,15 @@
 
 const POSTS = [
   {
+    id: "2026-04-01-xiaohongshu-content-strategy",
+    date: "2026-04-01",
+    title: "小红书内容运营策略：如何在2026年抓住3.5亿用户的注意力",
+    excerpt: "3.5亿月活用户，每天打开16次，每分钟发布超过6000篇笔记。小红书的底层逻辑是搜索驱动而非推荐驱动，理解这一点是内容创作的起点。封面3秒定生死、标题能被搜到是第一步、内容能被收藏是目标。",
+    tags: ["小红书", "内容运营", "创作技巧", "流量增长"],
+    category: "小红书",
+    file: "posts/2026-04-01-xiaohongshu-content-strategy.html"
+  },
+  {
     id: "2026-04-01-existentialism",
     date: "2026-04-01",
     title: "存在主义：当世界不给你答案，你该如何活下去",
