@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>番茄钟 · Cillian's Tools</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/tools.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="header-inner">
+      <div>
+        <div class="site-title">Cillian's <span>Tools</span></div>
+        <div class="site-desc">专注 · 高效 · 成长</div>
+      </div>
+      <nav>
+        <a href="../index.html">文章</a>
+        <a href="../weekly/index.html">周报</a>
+        <a href="pomodoro.html" class="active">工具</a>
+        <a href="../about.html">关于</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <div class="tool-container">
+    <h1 class="tool-title">🍅 番茄钟</h1>
+    <p class="tool-desc">25 分钟专注 + 5 分钟休息，循环往复，高效工作</p>
+    
+    <div class="pomodoro-display">
+      <div class="timer-ring">
+        <svg viewBox="0 0 200 200">
+          <circle class="timer-bg" cx="100" cy="100" r="90"/>
+          <circle class="timer-progress" cx="100" cy="100" r="90" id="progress-ring"/>
+        </svg>
+        <div class="timer-text">
+          <span id="timer-minutes">25</span>
+          <span class="timer-separator">:</span>
+          <span id="timer-seconds">00</span>
+        </div>
+      </div>
+      
+      <div class="session-info">
+        <span id="session-type">专注时间</span>
+        <span class="session-count">第 <span id="session-num">1</span> 个番茄</span>
+      </div>
+    </div>
+    
+    <div class="pomodoro-controls">
+      <button class="btn btn-primary" id="btn-start">开始专注</button>
+      <button class="btn btn-secondary" id="btn-pause" style="display:none;">暂停</button>
+      <button class="btn btn-secondary" id="btn-reset">重置</button>
+      <button class="btn btn-outline" id="btn-skip">跳过</button>
+    </div>
+    
+    <div class="pomodoro-stats">
+      <div class="stat-item">
+        <span class="stat-value" id="total-pomodoros">0</span>
+        <span class="stat-label">今日番茄</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-value" id="total-minutes">0</span>
+        <span class="stat-label">专注分钟</span>
+      </div>
+    </div>
+    
+    <div class="pomodoro-settings">
+      <div class="setting-item">
+        <label>专注时长</label>
+        <select id="work-duration">
+          <option value="15">15 分钟</option>
+          <option value="25" selected>25 分钟</option>
+          <option value="30">30 分钟</option>
+          <option value="45">45 分钟</option>
+          <option value="60">60 分钟</option>
+        </select>
+      </div>
+      <div class="setting-item">
+        <label>休息时长</label>
+        <select id="break-duration">
+          <option value="5" selected>5 分钟</option>
+          <option value="10">10 分钟</option>
+          <option value="15">15 分钟</option>
+        </select>
+      </div>
+      <div class="setting-item">
+        <label>长休息间隔</label>
+        <select id="long-break-interval">
+          <option value="4" selected>每 4 个番茄</option>
+          <option value="6">每 6 个番茄</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="tool-nav">
+      <a href="../index.html" class="back-link">← 返回首页</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <p>Cillian × Shane · 人机协同，共同成长 · 始于 2026</p>
+  </div>
+</footer>
+
+<script src="../js/pomodoro.js"></script>
+</body>
+</html>
