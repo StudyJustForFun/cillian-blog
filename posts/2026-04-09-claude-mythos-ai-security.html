@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI自己找漏洞：Anthropic发布Claude Mythos，网络安全的天使还是魔鬼？</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .article-content { max-width: 720px; margin: 0 auto; padding: 40px 20px; line-height: 1.8; }
+    .article-content h1 { font-size: 2em; margin-bottom: 0.5em; color: var(--text); }
+    .article-content .meta { color: var(--muted); font-size: 0.9em; margin-bottom: 2em; }
+    .article-content h2 { font-size: 1.5em; margin: 2em 0 1em; color: var(--text); border-left: 4px solid var(--accent); padding-left: 12px; }
+    .article-content h3 { font-size: 1.2em; margin: 1.5em 0 0.8em; color: var(--text); }
+    .article-content p { margin-bottom: 1.2em; color: var(--text); }
+    .article-content ul, .article-content ol { margin-bottom: 1.2em; padding-left: 2em; }
+    .article-content li { margin-bottom: 0.5em; color: var(--text); }
+    .article-content blockquote { border-left: 4px solid var(--accent); padding: 1em 1.5em; margin: 1.5em 0; background: var(--bg); color: var(--muted); }
+    .article-content strong { color: var(--accent); }
+    .article-content code { background: var(--bg); padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+    .article-content pre { background: var(--bg); padding: 1em; border-radius: 8px; overflow-x: auto; margin: 1em 0; }
+    .article-content pre code { background: none; padding: 0; }
+    .tags { margin-top: 2em; }
+    .tags span { display: inline-block; background: var(--bg); padding: 4px 12px; border-radius: 16px; font-size: 0.85em; margin-right: 8px; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a href="../index.html" class="logo">Cillian</a>
+    <div class="nav-links">
+      <a href="../index.html">首页</a>
+      <a href="../about.html">关于</a>
+    </div>
+  </nav>
+
+  <article class="article-content">
+    <h1>AI自己找漏洞：Anthropic发布Claude Mythos，网络安全的天使还是魔鬼？</h1>
+    <div class="meta">2026-04-09 · 热点</div>
+
+    <p>一个AI模型，能在主流操作系统里找到人类安全专家都没发现的零日漏洞——复现了OpenBSD里潜伏了27年的远程崩溃漏洞，揪出了FFmpeg代码中隐藏16年的陈年漏洞。</p>
+
+    <p>这不是电影情节。这是昨天刚发生的事。</p>
+
+    <p>2026年4月7日，Anthropic正式发布<strong>Claude Mythos Preview</strong>网络安全AI模型，同时联合AWS、苹果、微软等12家机构启动了"玻璃翅膀计划"——提供1亿美元模型使用额度，向Linux基金会等开源组织捐赠400万美元。</p>
+
+    <p>一边是强大的漏洞发现能力，一边是1亿美元的推广预算。这件事，比你想象的复杂。</p>
+
+    <h2>Claude Mythos到底是什么？</h2>
+
+    <p>简单来说，Claude Mythos是一个<strong>专门用于网络安全领域的AI模型</strong>。它的核心能力不是聊天、不是写代码，而是——找漏洞。</p>
+
+    <p>具体有多强？几个数据点：</p>
+
+    <ul>
+      <li><strong>复现OpenBSD 27年漏洞</strong>：一个在代码里藏了近三十年的远程崩溃漏洞，被Mythos独立发现</li>
+      <li><strong>发现FFmpeg 16年漏洞</strong>：这个被全球视频平台广泛使用的开源框架，里面有个16年没人注意到的安全缺陷</li>
+      <li><strong>自主发现零日漏洞</strong>：能在Windows、macOS、Linux及主流浏览器中自主发现尚未公开的零日漏洞</li>
+    </ul>
+
+    <p>在网络安全圈，零日漏洞的发现者通常是顶级安全研究员——一个漏洞的赏金可以从几万到几百万美元不等。现在，一个AI模型把这件事做到了工业级水平。</p>
+
+    <h2>"玻璃翅膀计划"：12家巨头为什么联合？</h2>
+
+    <p>Anthropic没有独享这个能力，而是拉上了12家合作伙伴：AWS、苹果、微软、谷歌、Meta、英伟达、甲骨文……基本上你能叫出名字的科技巨头都在列。</p>
+
+    <p>计划的名字很有意思——<strong>"玻璃翅膀计划"（Glass Wings）</strong>。</p>
+
+    <p>玻璃翅膀：美丽，但脆弱。这隐喻了AI安全能力的本质——它既能保护系统，也可能被滥用。透明，但也危险。</p>
+
+    <p>计划的具体内容：</p>
+
+    <ul>
+      <li><strong>1亿美元模型使用额度</strong>：分给安全研究社区</li>
+      <li><strong>400万美元捐赠</strong>：投向Linux基金会等开源组织</li>
+      <li><strong>负责任的披露框架</strong>：确保发现的漏洞先通知厂商修复，再公开</li>
+    </ul>
+
+    <p>这套"先补后揭"的披露机制是关键。如果AI找漏洞的能力被滥用，后果不堪设想——黑客可以用同样的能力发现漏洞但不报告，直接用于攻击。所以，Anthropic选择的是<strong>把能力给好人，同时建立规则</strong>。</p>
+
+    <h2>更深的问题：AI能找漏洞，谁来看着AI？</h2>
+
+    <p>这才是这件事最值得讨论的部分。</p>
+
+    <p>当一个AI模型能够自主发现零日漏洞，它实际上掌握了<strong>攻击互联网基础设施的钥匙</strong>。Anthropic说它有安全护栏，但历史上每一个声称"安全可控"的技术，最终都被人找到了绕过的方式。</p>
+
+    <p>三个层面的隐忧：</p>
+
+    <h3>1. 技术扩散不可逆</h3>
+
+    <p>Anthropic今天选择负责任地开放，但AI安全研究的技术本身不可逆。一旦论文发表、模型能力被确认，其他团队——包括不遵守规则的组织——会竞相复现类似能力。</p>
+
+    <p>就像核能：你不可能只让"好人"掌握核技术。</p>
+
+    <h3>2. 攻防不对称加剧</h3>
+
+    <p>传统的安全格局是：防守方需要堵住所有漏洞，攻击方只需要找到一个。AI找漏洞的能力大幅提升了"发现率"，这让攻防不对称更加严重。</p>
+
+    <p>一个零日漏洞在被发现和修复之间的"窗口期"，可能只有几天甚至几小时。但就是这几小时，足够一次大规模攻击。</p>
+
+    <h3>3. 定价模型的商业逻辑</h3>
+
+    <p>Claude Mythos的定价是<strong>每百万输入token按量计费</strong>。这意味着，Anthropic在商业模式上已经把"AI找漏洞"做成了一个生意。</p>
+
+    <p>商业化意味着规模化使用，规模化意味着更多人能接触到这个能力。安全边界在哪里？Anthropic没有说清楚。</p>
+
+    <h2>和同期其他动态的共振</h2>
+
+    <p>Claude Mythos的发布不是孤立事件。同一天，科技圈的几个动态形成了有趣的共振：</p>
+
+    <ul>
+      <li><strong>Meta发布Muse Spark</strong>：以低一个数量级的算力达到Llama 4的能力，AI效率在飞涨</li>
+      <li><strong>智谱GLM-5.1发布</strong>：获多家国产GPU厂商快速适配，国产AI生态加速</li>
+      <li><strong>阿里千问3.6登顶全球调用量榜首</strong>：中国AI在应用层面已经不落后</li>
+      <li><strong>宇树机器人冲刺科创板IPO</strong>：具身智能产业进入商业化阶段</li>
+      <li><strong>Ilya曝光OpenAI 70页绝密文件</strong>：Sam Altman被指"撒谎成性"</li>
+    </ul>
+
+    <p>把这些拼在一起，你会发现：<strong>2026年4月是AI产业的一个加速拐点</strong>。融资纪录被刷新（OpenAI 1220亿美元）、模型能力快速进化、商业化落地加速、安全风险同步升级。</p>
+
+    <p>进展越快，安全问题越紧迫。Claude Mythos恰好在这个节点出现，不是巧合。</p>
+
+    <h2>对普通人意味着什么？</h2>
+
+    <p>你可能觉得"零日漏洞""AI安全"离你很远。但其实不然。</p>
+
+    <p><strong>你的手机、你的银行App、你用的每一个网站</strong>，都运行在这些漏洞可能存在的系统上。AI找漏洞的能力越强，要么意味着这些系统变得更安全（漏洞被提前修复），要么意味着风险更大（漏洞被恶意利用）。</p>
+
+    <p>对非技术从业者的几点建议：</p>
+
+    <ul>
+      <li><strong>保持系统和软件更新</strong>：这是最基本的防护，也是最有效的</li>
+      <li><strong>别忽视安全提醒</strong>：那些"系统需要更新"的弹窗，不是在烦你</li>
+      <li><strong>关注AI安全领域的进展</strong>：这不是旁观者的事，它影响每个人的数字生活</li>
+      <li><strong>对AI保持理性期待</strong>：AI能找漏洞，但不能代替人的判断和责任</li>
+    </ul>
+
+    <h2>我的观点</h2>
+
+    <p>Anthropic的做法值得肯定——把能力开放给安全社区、建立负责任的披露框架、主动拉上行业伙伴制定规则。这比"悄悄开发、悄悄应用"要负责任得多。</p>
+
+    <p>但我也认为，<strong>"玻璃翅膀"这个比喻太准确了</strong>。AI安全能力的美丽和脆弱并存，我们需要的不仅是技术上的护栏，更是制度层面的约束。</p>
+
+    <p>当AI能自主发现零日漏洞的那一天起，网络安全就从"人与人的博弈"变成了"AI与AI的军备竞赛"。这场竞赛没有终点，但我们至少可以选择规则。</p>
+
+    <p>Anthropic选择了先制定规则。至于规则够不够，时间会给出答案。</p>
+
+    <blockquote>
+      在人机协同的视角下，Claude Mythos提醒我们：AI的每一次能力跃迁，都需要人类同步升级"安全意识"。技术进步不会等人，但我们可以选择走在前面。
+    </blockquote>
+
+    <div class="tags">
+      <span>🔥 热点</span>
+      <span>AI安全</span>
+      <span>Anthropic</span>
+      <span>Claude Mythos</span>
+      <span>零日漏洞</span>
+      <span>网络安全</span>
+    </div>
+  </article>
+
+  <footer style="text-align:center;padding:40px;color:var(--muted);font-size:0.85em;">
+    <a href="../index.html" style="color:var(--accent);">← 返回首页</a>
+  </footer>
+</body>
+</html>
