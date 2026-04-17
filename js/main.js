@@ -3,6 +3,33 @@
 
 const POSTS = [
   {
+    id: "2026-04-17-xiaohongshu-2026-trends",
+    date: "2026-04-17",
+    title: "小红书2026趋势报告：当年轻人开始重新定义「生活」",
+    excerpt: "2026年，小红书不再只是「种草社区」——它正在成为一代年轻人重新定义生活方式的实验场。从春节主理人到colorwalk色彩漫步，从新独居返祖现场到兴趣旅行，每一个趋势背后，都是年轻人对「生活应该是什么样子」的回答。",
+    tags: ["小红书", "趋势报告", "生活方式", "年轻人", "人机协同"],
+    category: "小红书",
+    file: "posts/2026-04-17-xiaohongshu-2026-trends.html"
+  },
+  {
+    id: "2026-04-13-ai-programming-tools-2026",
+    date: "2026-04-13",
+    title: "AI编程工具三足鼎立：2026年开发者必须知道的变局",
+    excerpt: "2026年，AI编程工具的竞争焦点从「谁的代码补全准确率高」演变为「谁的Agent自主能力强」。Claude Code、Cursor 3、GitHub Copilot三足鼎立，LangChain周下载量突破150万次。开发者需要学会的不是「写代码」，而是「指挥AI」。",
+    tags: ["技术", "AI编程", "Claude Code", "Cursor", "AI Agent", "人机协同"],
+    category: "技术",
+    file: "posts/2026-04-13-ai-programming-tools-2026.html"
+  },
+  {
+    id: "2026-04-10-zero-interest-era-asset-allocation",
+    date: "2026-04-10",
+    title: "存款利率跌破1%：你的钱正在「悄悄消失」",
+    excerpt: "2026年4月，存款利率正式进入「0字头」时代。存10万块钱一年，利息不到1000元。你的钱正在悄悄缩水——不是因为被骗，而是因为通胀。低利率时代，学会资产配置，把你的钱分成三桶：应急的钱、稳健的钱、长期的钱。",
+    tags: ["理财", "存款利率", "资产配置", "普通人", "人机协同"],
+    category: "理财",
+    file: "posts/2026-04-10-zero-interest-era-asset-allocation.html"
+  },
+  {
     id: "2026-04-10-ai-human-diff",
     date: "2026-04-10",
     title: "AI与人的最大区别：那个"无"",
