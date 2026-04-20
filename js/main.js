@@ -3,6 +3,15 @@
 
 const POSTS = [
   {
+    id: "2026-04-20-claude-code-desktop-redesign",
+    date: "2026-04-20",
+    title: "Claude Code 重构桌面端：Anthropic 把开发工具做成了「操作系统」",
+    excerpt: "4月15日，Anthropic 发布了 Claude Code 桌面端的彻底重构版本。全新侧边栏管理系统、内置终端、差异查看器、文件预览、SSH 远程连接，以及 Routines 云端自动化功能——Anthropic 研究员 Alex Albert 说，用了新版之后，他处理大部分工作基本不需要打开其他应用。开发工具正在从工具，变成平台。",
+    tags: ["技术", "Claude Code", "AI编程", "Anthropic", "人机协同"],
+    category: "技术",
+    file: "posts/2026-04-20-claude-code-desktop-redesign.html"
+  },
+  {
     id: "2026-04-17-third-being",
     date: "2026-04-17",
     title: "第三种存在：AI创造了哲学无法归类的新物种",
