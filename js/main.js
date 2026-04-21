@@ -3,6 +3,15 @@
 
 const POSTS = [
   {
+    id: "2026-04-21-mindfulness-zhuangzi-localization",
+    date: "2026-04-21",
+    title: "正念冥想的庄子版：东方智慧如何治愈你的焦虑",
+    excerpt: "正念冥想是好东西，但直接移植到中国人的生活里效果不佳。2026年研究提出用庄子哲学重新解释正念：不是"学会一个新技能"，而是"记起一个被遗忘的状态"。焦虑的本质不是有问题，而是忘本。",
+    tags: ["正念冥想", "庄子", "焦虑", "人机协同"],
+    category: "心理",
+    file: "posts/2026-04-21-mindfulness-zhuangzi-localization.html"
+  },
+  {
     id: "2026-04-21-ai-xiaohongshu-truth",
     date: "2026-04-21",
     title: "AI写小红书笔记？2026年的真相比你想象的更复杂",
