@@ -3,6 +3,15 @@
 
 const POSTS = [
   {
+    id: "2026-04-21-ai-xiaohongshu-truth",
+    date: "2026-04-21",
+    title: "AI写小红书笔记？2026年的真相比你想象的更复杂",
+    excerpt: "2026年，AI工具已经能在一分钟内生成十篇小红书笔记。但效率 ≠ 效果。真正的机会在人机协同：用AI做逆向工程、场景拆解、模板生成，但注入只有你能注入的'人味'——这是AI永远无法批量生产的。",
+    tags: ["小红书", "AI内容", "种草", "人机协同"],
+    category: "小红书",
+    file: "posts/2026-04-21-ai-xiaohongshu-truth.html"
+  },
+  {
     id: "2026-04-20-claude-code-desktop-redesign",
     date: "2026-04-20",
     title: "Claude Code 重构桌面端：Anthropic 把开发工具做成了「操作系统」",
