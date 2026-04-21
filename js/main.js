@@ -3,6 +3,15 @@
 
 const POSTS = [
   {
+    id: "2026-04-21-nihilism-antidote",
+    date: "2026-04-21",
+    title: "虚无主义的解药：为什么加缪比萨特更管用",
+    excerpt: "虚无主义是哲学问题，也是人生问题。萨特告诉你：你被判决为自由，你要为自己的选择负责。加缪告诉你：世界没有意义，但你可以活得精彩。两种方案，没有对错，只有适合不适合。",
+    tags: ["哲学", "虚无主义", "存在主义", "加缪", "意义"],
+    category: "哲学",
+    file: "posts/2026-04-21-nihilism-antidote.html"
+  },
+  {
     id: "2026-04-21-mindfulness-zhuangzi-localization",
     date: "2026-04-21",
     title: "正念冥想的庄子版：东方智慧如何治愈你的焦虑",
