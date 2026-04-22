@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026年普通人理财：利率跌破1%，你的钱该去哪儿？</title>
+  <style>
+    :root {
+      --bg: #faf9f7;
+      --card: #ffffff;
+      --text: #2d2d2d;
+      --text-light: #666;
+      --accent: #e07c24;
+      --accent-light: #fef3e8;
+      --border: #e8e4df;
+      --tag-bg: #f0ede8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+      padding: 0 16px;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 0 80px;
+    }
+    .header { margin-bottom: 40px; }
+    .date {
+      font-size: 13px;
+      color: var(--text-light);
+      margin-bottom: 12px;
+      letter-spacing: 0.5px;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 1.4;
+      color: #1a1a1a;
+      margin-bottom: 16px;
+    }
+    .excerpt {
+      font-size: 16px;
+      color: var(--text-light);
+      background: var(--accent-light);
+      border-left: 3px solid var(--accent);
+      padding: 14px 18px;
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 32px;
+    }
+    .content h2 {
+      font-size: 19px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin: 40px 0 16px;
+      padding-top: 8px;
+      border-top: 1px solid var(--border);
+    }
+    .content h2:first-of-type { border-top: none; margin-top: 0; padding-top: 0; }
+    .content p {
+      font-size: 15.5px;
+      color: #3a3a3a;
+      margin-bottom: 18px;
+      text-align: justify;
+    }
+    .content strong { color: var(--accent); font-weight: 600; }
+    .highlight-box {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 24px 0;
+    }
+    .highlight-box .title {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 12px;
+      letter-spacing: 0.3px;
+    }
+    .rate-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13.5px;
+      margin: 16px 0;
+    }
+    .rate-table th {
+      background: #f5f0e8;
+      padding: 8px 12px;
+      text-align: left;
+      font-weight: 600;
+      border-bottom: 2px solid var(--border);
+    }
+    .rate-table td {
+      padding: 7px 12px;
+      border-bottom: 1px solid #f0ede8;
+      color: #3a3a3a;
+    }
+    .rate-table tr:last-child td { border-bottom: none; }
+    .case-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 16px 0;
+    }
+    .case-card .case-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .case-card .case-title .amount {
+      background: var(--accent);
+      color: white;
+      font-size: 12px;
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+    .case-card ul {
+      list-style: none;
+      padding: 0;
+    }
+    .case-card ul li {
+      font-size: 14px;
+      color: #3a3a3a;
+      padding: 6px 0;
+      border-bottom: 1px solid #f5f0e8;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .case-card ul li:last-child { border-bottom: none; }
+    .case-card .allocation {
+      font-size: 12px;
+      color: var(--text-light);
+      font-weight: 600;
+    }
+    .principle-box {
+      background: linear-gradient(135deg, #fef9f4, #fdf3e8);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 24px 0;
+    }
+    .principle-box .label {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+    .principle-box ol {
+      padding-left: 20px;
+    }
+    .principle-box ol li {
+      font-size: 14.5px;
+      color: #3a3a3a;
+      margin-bottom: 10px;
+    }
+    .tags { margin-top: 40px; }
+    .tag {
+      display: inline-block;
+      background: var(--tag-bg);
+      color: var(--text-light);
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 20px;
+      margin: 4px 4px 0 0;
+    }
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 40px 0;
+    }
+    .footer-note {
+      font-size: 13px;
+      color: var(--text-light);
+      background: #f8f6f2;
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin-top: 32px;
+      border-left: 3px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="date">2026-04-22</div>
+      <h1>2026年普通人理财：利率跌破1%，你的钱该去哪儿？</h1>
+      <div class="excerpt">
+        10万元存一年定期，到手利息只剩950元——这不是演习，是2026年4月的现实。存款利率正式进入"1字头"时代，单纯存银行已经在让你的财富悄悄缩水。但越是在这种时候，越要冷静。理财不是赌博，而是一套系统的资金安排。
+      </div>
+    </div>
+
+    <div class="content">
+      <h2>一、现实：你的存款，正在"负增长"</h2>
+      <p>2026年4月，国有六大行（工商银行、建设银行、农业银行、中国银行、交通银行、邮储银行）的定期存款利率已经全面统一：</p>
+
+      <div class="highlight-box">
+        <div class="title">📊 2026年4月 国有六大行存款利率一览</div>
+        <table class="rate-table">
+          <tr><th>存期</th><th>年利率</th><th>10万元到期利息</th></tr>
+          <tr><td>活期</td><td>0.05%</td><td>50元/年</td></tr>
+          <tr><td>3个月</td><td>0.65%</td><td>162.5元/年</td></tr>
+          <tr><td>6个月</td><td>0.85%</td><td>425元/半年</td></tr>
+          <tr><td>1年期</td><td>0.95%</td><td>950元/年</td></tr>
+          <tr><td>2年期</td><td>1.05%</td><td>2100元/2年</td></tr>
+          <tr><td>3年期</td><td>1.25%</td><td>3750元/3年</td></tr>
+          <tr><td>5年期</td><td>1.30%</td><td>6500元/5年</td></tr>
+        </table>
+      </div>
+
+      <p>10万存5年，利息只有6500块，平均每月108元。这个数字，可能连一顿像样的饭都吃不起。更残酷的是：如果通胀按3%估算，你的实际购买力每年都在缩水。</p>
+
+      <p>但这不意味着你应该去炒股、买高息理财——那是另一个极端。大多数普通人需要做的，是<strong>根据自己的资金量和风险承受能力，做一个合理的分层配置</strong>。</p>
+
+      <h2>二、三个资金量级的配置方案</h2>
+
+      <h2 style="font-size:15px; color: var(--text-light); font-weight:400; margin-top:-8px;">以下方案假设你已配备基础保险（百万医疗险+意外险），且资金为3年以上不需要动用的闲钱。</h2>
+
+      <div class="case-card">
+        <div class="case-title">
+          💼 方案A：10万元以下 · 小资金，重点是"不亏损"
+          <span class="amount">保守型</span>
+        </div>
+        <ul>
+          <li>
+            <span>50% 国有大行智能存款（1年期，利率约0.95%-1.2%）</span>
+            <span class="allocation">≈ 5000元</span>
+          </li>
+          <li>
+            <span>30% 城商行/农商行定期（1-3年期，利率1.75%-2.15%）</span>
+            <span class="allocation">≈ 3000元</span>
+          </li>
+          <li>
+            <span>20% 货币基金 / 余额宝（随存随取，年化约1.8%-2.0%）</span>
+            <span class="allocation">≈ 2000元</span>
+          </li>
+        </ul>
+        <p style="font-size:12px; color: var(--text-light); margin-top:12px;">💡 关键操作：不要把鸡蛋放在一个银行。50万以内的存款受存款保险保障，但分散存放更安心。</p>
+      </div>
+
+      <div class="case-card">
+        <div class="case-title">
+          📈 方案B：10万-50万元 · 稳健为主，开始布局权益
+          <span class="amount">平衡型</span>
+        </div>
+        <ul>
+          <li>
+            <span>30% 银行大额存单（3年期，约1.55%-1.85%）</span>
+            <span class="allocation">≈ 1.5万-2万</span>
+          </li>
+          <li>
+            <span>30% 纯债基金 / 银行R2理财（年化约3%-4%，历史波动较小）</span>
+            <span class="allocation">≈ 1.5万-2万</span>
+          </li>
+          <li>
+            <span>25% 宽基ETF定投（沪深300ETF / 中证A500ETF，月定投）</span>
+            <span class="allocation">≈ 1.25万</span>
+          </li>
+          <li>
+            <span>15% 黄金ETF（分散风险，对冲通胀和地缘不确定性）</span>
+            <span class="allocation">≈ 7500元</span>
+          </li>
+        </ul>
+        <p style="font-size:12px; color: var(--text-light); margin-top:12px;">💡 关键操作：ETF定投不要择时。2026年4月主流价值指数估值处于历史30%分位以下，是中长期布局的友好窗口。用"50%底仓+50%定投"模式，兼顾效率与风险。</p>
+      </div>
+
+      <div class="case-card">
+        <div class="case-title">
+          🏦 方案C：50万-100万元 · 系统配置，追求长期复利
+          <span class="amount">积极型</span>
+        </div>
+        <ul>
+          <li>
+            <span>30% 固收打底（大额存单 + 国债，约3.2%-3.5%）</span>
+            <span class="allocation">≈ 15-30万</span>
+          </li>
+          <li>
+            <span>25% 固收+基金 / 偏债混合基金（含10-30%权益，年化目标6%-8%）</span>
+            <span class="allocation">≈ 12.5-25万</span>
+          </li>
+          <li>
+            <span>25% 红利ETF / 高股息ETF（股息率4%-5%，追求稳定现金流）</span>
+            <span class="allocation">≈ 12.5-25万</span>
+          </li>
+          <li>
+            <span>10% 黄金ETF + 10% 港股/美股指数（全球分散，风险对冲）</span>
+            <span class="allocation">≈ 10-20万</span>
+          </li>
+        </ul>
+        <p style="font-size:12px; color: var(--text-light); margin-top:12px;">💡 特别提醒：如果你有20万以上闲置资金，中国银行三年期大额存单（年化1.55%，受存款保险保障，支持转让）值得关注——比普通定存多赚约1800元/3年。</p>
+      </div>
+
+      <h2>三、低利率时代，三条核心原则</h2>
+
+      <div class="principle-box">
+        <div class="label">⚡ 原则清单</div>
+        <ol>
+          <li><strong>安全第一，只赚确定性的钱。</strong> 年化超过4%的"保本"产品，99%是骗局。2026年，普通人的合理预期是：存款替代品年化2%-5%，权益类ETF长期年化6%-10%。</li>
+          <li><strong>用闲钱参与，绝不加杠杆。</strong> 所有用于投资的钱，必须是3年以上不需要动的。否则市场短期波动会逼你在最低点割肉。</li>
+          <li><strong>分散期限，锁定利率。</strong> 如果你判断未来利率还会降，现在锁定3-5年期存款/国债是明智的；如果利率可能回升，则多配置短期和灵活产品。分散存期，每年都有一笔钱到期，是最稳妥的策略。</li>
+        </ol>
+      </div>
+
+      <h2>四、基金定投：普通人最容易坚持的策略</h2>
+      <p>如果你不想研究个股、不想看盘、不想择时，<strong>宽基ETF定投</strong>是2026年最适合普通人的投资方式。</p>
+      <p>具体操作很简单：每月固定日期投入固定金额，买入沪深300ETF或中证A500ETF。无论市场涨跌，到期就买，跌多了反而多买。2026年主流价值指数估值处于历史30%分位以下，低估值提供了较强的安全边际。</p>
+      <p>历史数据证明：坚持定投宽基ETF10年以上，年化收益大概率落在6%-10%区间。这比存银行强10倍，而且不需要任何投资天赋。</p>
+      <p>唯一需要的，是耐心。</p>
+
+      <hr class="divider">
+
+      <p>低利率时代，最可怕的不是利息低，而是<strong>你什么都不做</strong>。</p>
+      <p>把10万放在活期账户里"等机会"，每年亏的是购买力；把10万存5年定期，每年950元利息少是少，但至少是正增长。</p>
+      <p>理财的本质不是让你暴富，而是在安全的前提下，让你的钱跑赢通胀，为未来的自己积累资产。2026年，从今天开始，哪怕每月只投500块，坚持10年，你会感谢自己。</p>
+    </div>
+
+    <div class="tags">
+      <span class="tag">理财</span>
+      <span class="tag">存款利率</span>
+      <span class="tag">ETF定投</span>
+      <span class="tag">资产配置</span>
+      <span class="tag">普通人</span>
+      <span class="tag">低利率时代</span>
+      <span class="tag">人机协同</span>
+    </div>
+
+    <div class="footer-note">
+      ⚠️ 本文仅供参考，不构成投资建议。基金、ETF有风险，入市需谨慎。请根据自身风险承受能力和资金状况做出独立判断。
+    </div>
+  </div>
+</body>
+</html>
