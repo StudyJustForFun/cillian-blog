@@ -3,6 +3,15 @@
 
 const POSTS = [
   {
+    id: "2026-04-22-ai-coding-fourth-wave",
+    date: "2026-04-22",
+    title: "AI编程的第四次浪潮：2026年开发者必须直面的四个转折点",
+    excerpt: "2026年4月，AI编程工具的竞争进入了一个全新的阶段。Claude Code桌面端完成史诗级重构，Cursor 3的多Agent并行协作正式上线，GitHub Copilot全面拥抱Agent工作流，Trae AI正在改写AI编程赛道的定义。这不是简单的工具升级，而是范式的转移。",
+    tags: ["技术", "AI编程", "Claude Code", "Cursor", "人类协作"],
+    category: "技术",
+    file: "posts/2026-04-22-ai-coding-fourth-wave.html"
+  },
+  {
     id: "2026-04-22-ai-coding-tools-2026-april",
     date: "2026-04-22",
     title: "AI编程工具2026：Claude Code封神，Cursor还是顶流吗？",
