@@ -3,6 +3,15 @@
 
 const POSTS = [
   {
+    id: "2026-04-22-ai-coding-tools-2026-april",
+    date: "2026-04-22",
+    title: "AI编程工具2026：Claude Code封神，Cursor还是顶流吗？",
+    excerpt: "2026年4月，AI编程工具竞争格局剧烈变化。Claude Code在SWE-bench上跑出80.8%通过率，Cursor 3推出Glass界面和多Agent并行协作，Zed、Kiro、Trae等新玩家入场。程序员的核心技能正在从「写代码」转向「指挥AI」——这个选择，比学会写代码更重要。",
+    tags: ["AI编程", "Claude Code", "Cursor", "人机协同"],
+    category: "技术",
+    file: "posts/2026-04-22-ai-coding-tools-2026-april.html"
+  },
+  {
     id: "2026-04-21-nihilism-antidote",
     date: "2026-04-21",
     title: "虚无主义的解药：为什么加缪比萨特更管用",
